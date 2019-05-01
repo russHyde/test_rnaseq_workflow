@@ -1,0 +1,56 @@
+# Cloned packages are commit-stamped, so we don't need to keep a local copy
+
+**/lib/cloned_packages
+
+# Job-specific package
+
+lib/test.rnaseq.workflow
+
+# Data files / directories / archives
+
+data
+.RData
+*.gz
+*.zip
+
+# Computed files
+
+**/lib/built_packages
+
+results
+man
+doc/figure
+
+*.docx
+*.pptx
+*.pdf
+*.png
+*.jpg
+*.jpeg
+*.html
+*.jar
+
+# Application logs
+
+logs
+
+.snakemake
+.Rhistory
+*.Rcheck
+.ipynb_checkpoints
+
+# Development
+
+.idea
+
+# Temp files
+
+temp
+
+*.swp
+*.knit.md
+*.utf8.md
+
+# RStudio configs
+
+.Rproj.user
