@@ -17,6 +17,7 @@
 ./data/ext
 ./data/int
 ./data/job
+./data/job/rnaseq_workflow
 ./doc/figure
 ./envs
 ./lib/built_packages
@@ -30,6 +31,7 @@
 ./lib/local_rfuncs/R
 ./lib/local_rfuncs/tests
 ./lib/local_rfuncs/tests/testthat
+./logs/rnaseq_workflow
 ./results
 ./scripts/snake_recipes
 ./temp

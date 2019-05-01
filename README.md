@@ -116,6 +116,20 @@ rule all:
         rnaseq_workflow("doc/align/fake_report.pdf")
 ```
 
+Added "rnaseq_workflow" as a named subjob in `.sidekick/setup/subjob_names.txt`
+
+Added `data/job/rnaseq_workflow` and `logs/rnaseq_workflow` to directories
+constructed during `./sidekick setup`
+
+Moved fastq files to be in subdirectory of `./data/int/fastq rather` than
+`./data/int/test_fastqs`
+
+Run using command
+
+```
+snakemake -p --configfile conf/snake_config.yaml --use-conda
+```
+
 ## Dataset details
 
 <!-- User to fill in the details -->

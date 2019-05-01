@@ -2,3 +2,5 @@
 # should be set-up
 
 # Each subjob should be present in ./subjobs/<subjob_name>
+
+rnaseq_workflow
