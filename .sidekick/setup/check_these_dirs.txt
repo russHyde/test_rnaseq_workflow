@@ -9,3 +9,11 @@
 # Example:
 # ../infx_scripts
 # ../infx_scripts/r_functions
+
+# data directories
+../../data/int/fastq/
+../../data/job/
+
+# config directories
+../../conf/rnaseq_workflow
+../../logs/rnaseq_workflow
