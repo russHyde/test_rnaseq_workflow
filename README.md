@@ -44,7 +44,59 @@ exclude any data/ directories from git)
 Added `rnaseq_workflow` as a git subtree
 
 ```
+# Allow us to refer to the git repo using shorthand `rnaseq_workflow`
+git remote add -f rnaseq_workflow git@github.com:russHyde/rnaseq_workflow
 
+# Ensure that the working tree is committed or stashed before this call:
+git subtree add \
+    --prefix subjobs/rnaseq_workflow \
+    rnaseq_workflow master --squash
+```
+
+```
+# you can do this to update the rnaseq_workflow subtree:
+# git pull --prefix subjobs/rnaseq_workflow rnaseq_workflow master --squash
+```
+
+Set up the config info for `rnaseq_workflow`:
+
+- Added directories `conf/` and `conf/rnaseq_workflow`
+
+- Added conf/snake_config.yaml with contents
+
+```
+rnaseq_samples: "conf/rnaseq_samples.tsv"
+rnaseq_program_params: "conf/rnaseq_program_params.yaml"
+rnaseq_reference_params: "conf/rnaseq_reference_params.yaml"
+```
+
+- Added `conf/rnaseq_workflow/rnaseq_program_params.yaml` with the following
+  contents (note that there should really be some adapter / poly-[ACGTN]
+  trimming in a call to cutadapt):
+
+```
+cutadapt-pe: >-
+    --trim-n --max-n=0.3 --nextseq-trim=20 --minimum-length=20
+
+featureCounts: "-s0 -T2 -t exon -g gene_id"
+
+hisat2: "--new-summary --omit-sec-seq"
+```
+
+- Added `conf/rnaseq_workflow/rnaseq_reference_params.yaml` with the following
+  contents:
+
+```
+index: data/ext/genomes/GRCh38/hisat2/genome_tran
+annotation: data/ext/genomes/GRCh38/ensembl.v84/Homo_sapiens.GRCh38.84.gtf.gz
+```
+
+- Added `conf/rnaseq_workflow/rnaseq_samples.tsv` with the following contents:
+
+```
+study_id	sample_id	run_id	lane_id	fq1	fq2
+test_rnaseq_workflow	sample1	sample1_run1	L0	data/int/test_fastqs/sample1_R1.fastq.gz	data/int/test_fastqs/sample1_R2.fastq.gz
+test_rnaseq_workflow	sample2	sammple2_run1	L0	data/int/test_fastqs/sample2/run1_R1.fastq.gz	data/int/test_fastqs/sample2/run1_R2.fastq.gz
 ```
 
 ## Dataset details

@@ -1,0 +1,7 @@
+cutadapt-pe: >-
+    --trim-n --max-n=0.3 --nextseq-trim=20 --minimum-length=20
+
+featureCounts: "-s0 -T2 -t exon -g gene_id"
+
+hisat2: "--new-summary --omit-sec-seq"
+

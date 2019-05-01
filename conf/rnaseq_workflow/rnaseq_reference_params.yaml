@@ -1,0 +1,3 @@
+index: data/ext/genomes/GRCh38/hisat2/genome_tran
+annotation: data/ext/genomes/GRCh38/ensembl.v84/Homo_sapiens.GRCh38.84.gtf.gz
+
