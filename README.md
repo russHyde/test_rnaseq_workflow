@@ -99,6 +99,23 @@ test_rnaseq_workflow	sample1	sample1_run1	L0	data/int/test_fastqs/sample1_R1.fas
 test_rnaseq_workflow	sample2	sammple2_run1	L0	data/int/test_fastqs/sample2/run1_R1.fastq.gz	data/int/test_fastqs/sample2/run1_R2.fastq.gz
 ```
 
+Added code to the main "Snakefile" for the test project
+
+```
+subworkflow rnaseq_workflow:
+    workdir:
+        "subjobs/rnaseq_workflow"
+    snakefile:
+        "subjobs/rnaseq_workflow/Snakefile"
+    configfile:
+        "subjobs/rnaseq_workflow/conf/snake_config.yaml"
+
+rule all:
+    input:
+        rnaseq_workflow("doc/prefilter/fake_report.pdf"),
+        rnaseq_workflow("doc/align/fake_report.pdf")
+```
+
 ## Dataset details
 
 <!-- User to fill in the details -->
