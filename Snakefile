@@ -10,5 +10,4 @@ subworkflow rnaseq_workflow:
 
 rule all:
     input:
-        rnaseq_workflow("doc/prefilter/fake_report.pdf"),
-        rnaseq_workflow("doc/align/fake_report.pdf")
+        rnaseq_workflow("doc/filter_and_align/fake_report.pdf")
