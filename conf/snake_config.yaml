@@ -1,4 +1,4 @@
-rnaseq_samples: "conf/rnaseq_samples.tsv"
-rnaseq_program_params: "conf/rnaseq_program_params.yaml"
-rnaseq_reference_params: "conf/rnaseq_reference_params.yaml"
+sequencing_samples: "conf/sequencing_samples.tsv"
+program_params: "conf/program_params.yaml"
+reference_params: "conf/reference_params.yaml"
 
