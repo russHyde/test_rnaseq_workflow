@@ -65,12 +65,12 @@ Set up the config info for `rnaseq_workflow`:
 - Added conf/snake_config.yaml with contents
 
 ```
-rnaseq_samples: "conf/rnaseq_samples.tsv"
-rnaseq_program_params: "conf/rnaseq_program_params.yaml"
-rnaseq_reference_params: "conf/rnaseq_reference_params.yaml"
+sequencing_samples: "conf/sequencing_samples.tsv"
+program_params: "conf/program_params.yaml"
+reference_params: "conf/reference_params.yaml"
 ```
 
-- Added `conf/rnaseq_workflow/rnaseq_program_params.yaml` with the following
+- Added `conf/rnaseq_workflow/program_params.yaml` with the following
   contents (note that there should really be some adapter / poly-[ACGTN]
   trimming in a call to cutadapt):
 
@@ -83,7 +83,7 @@ featureCounts: "-s0 -T2 -t exon -g gene_id"
 hisat2: "--new-summary --omit-sec-seq"
 ```
 
-- Added `conf/rnaseq_workflow/rnaseq_reference_params.yaml` with the following
+- Added `conf/rnaseq_workflow/reference_params.yaml` with the following
   contents:
 
 ```
@@ -91,7 +91,7 @@ index: data/ext/genomes/GRCh38/hisat2/genome_tran
 annotation: data/ext/genomes/GRCh38/ensembl.v84/Homo_sapiens.GRCh38.84.gtf.gz
 ```
 
-- Added `conf/rnaseq_workflow/rnaseq_samples.tsv` with the following contents:
+- Added `conf/rnaseq_workflow/sequencing_samples.tsv` with the following contents:
 
 ```
 study_id	sample_id	run_id	lane_id	fq1	fq2
