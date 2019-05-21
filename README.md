@@ -55,7 +55,7 @@ git subtree add \
 
 ```
 # you can do this to update the rnaseq_workflow subtree:
-# git pull --prefix subjobs/rnaseq_workflow rnaseq_workflow master --squash
+# git subtree pull --prefix subjobs/rnaseq_workflow rnaseq_workflow master --squash
 ```
 
 Set up the config info for `rnaseq_workflow`:
