@@ -13,3 +13,8 @@
 #     url: git@github.com:user/my_package.git
 #     commit: zyx9876
 #     output: ./lib/cloned_packages/my_package
+
+reeq:
+    url: git@github.com:russHyde/reeq.git
+    commit: 997cd95
+    output: ./lib/cloned_packages/reeq
