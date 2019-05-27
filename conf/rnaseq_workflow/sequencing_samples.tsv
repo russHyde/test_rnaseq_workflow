@@ -1,4 +1,5 @@
-study_id	sample_id	run_id	lane_id	fq1	fq2
-test_rnaseq_workflow	sample1	sample1_run1	L0	data/int/fastq/sample1_R1.fastq.gz	data/int/fastq/sample1_R2.fastq.gz
-test_rnaseq_workflow	sample2	sample2_run1	L0	data/int/fastq/sample2/run1_R1.fastq.gz	data/int/fastq/sample2/run1_R2.fastq.gz
-
+study_id	sample_id	run_id	lane_id	flowcell_id	fq1	fq2
+test_rnaseq_workflow	sample1	sample1_run1	L0	HWV3MBBXX	data/int/fastq/sample1_R1.fastq.gz	data/int/fastq/sample1_R2.fastq.gz
+test_rnaseq_workflow	sample2	sample2_run1	L0	HWV3MBBXX	data/int/fastq/sample2/run1_R1.fastq.gz	data/int/fastq/sample2/run1_R2.fastq.gz
+test_rnaseq_workflow	sample3	sample3_run1	L005	H3FWTBBXY	data/int/fastq/sample3/sample3_run1_L005_R1.fastq.gz	data/int/fastq/sample3/sample3_run1_L005_R2.fastq.gz
+test_rnaseq_workflow	sample3	sample3_run1	L006	H3FWTBBXY	data/int/fastq/sample3/sample3_run1_L006_R1.fastq.gz	data/int/fastq/sample3/sample3_run1_L006_R2.fastq.gz

@@ -5,3 +5,5 @@ featureCounts: "-s0 -T2 -t exon -g gene_id"
 
 hisat2: "--new-summary --omit-sec-seq"
 
+picard:
+    MarkDuplicates: "REMOVE_DUPLICATES=false"
