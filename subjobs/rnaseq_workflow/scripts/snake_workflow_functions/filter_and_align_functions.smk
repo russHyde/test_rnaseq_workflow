@@ -98,7 +98,7 @@ def get_feature_counts_reports(sequencing_samples, quantify_dirs):
     """
     fcounts_reports = expand(
         join(
-            "{directory_prefix}", "{sample}.fcount.summary",
+            "{directory_prefix}", "{sample}.fcount.summary"
         ),
         directory_prefix=quantify_dirs["with_dups"],
         sample=get_samples_by_run(sequencing_samples)
@@ -112,7 +112,7 @@ def get_rseqc_reports(sequencing_samples, rseqc_dirs):
 
     TODO: Update when we know what the output filenames will be
     """
-    report = os.path.join(
+    report = join(
         rseqc_dirs["prefix"], "unknown_output"
     )
     return [report]
