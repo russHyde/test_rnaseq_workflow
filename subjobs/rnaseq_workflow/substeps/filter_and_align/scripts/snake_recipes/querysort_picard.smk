@@ -1,1 +1,0 @@
-../../../../scripts/snake_recipes/querysort_picard.smk

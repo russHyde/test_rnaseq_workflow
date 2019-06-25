@@ -1,1 +1,0 @@
-../../../../scripts/snake_recipes/access_raw_reads.smk

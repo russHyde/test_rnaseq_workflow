@@ -1,1 +1,0 @@
-../../../../scripts/snake_recipes/readgroups_hisat2_bowtie2.smk
