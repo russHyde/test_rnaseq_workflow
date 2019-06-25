@@ -1,0 +1,20 @@
+$schema: "http://json-schema.org/draft-06/schema#"
+
+description: snakemake configuration file (filtering / alignment steps)
+
+type: object
+
+properties:
+    program_params:
+        type: string
+
+    reference_params:
+        type: string
+
+    sequencing_samples:
+        type: string
+
+required:
+  - program_params
+  - reference_params
+  - sequencing_samples
