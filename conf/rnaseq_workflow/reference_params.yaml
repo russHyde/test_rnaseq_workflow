@@ -7,3 +7,4 @@ annotation_version: "84"
 # the biomaRt name for accessing ensembl-annotations
 biomart_dataset: "hsapiens_gene_ensembl"
 
+transcript_bed12: "data/ext/genomes/GRCh38/ensembl.v84/Homo_sapiens.GRCh38.84.protein_coding.bed12"
